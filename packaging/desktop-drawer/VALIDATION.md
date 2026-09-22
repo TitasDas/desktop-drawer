@@ -46,6 +46,23 @@ Upstream structural validation uses the Cinnamon Spices validate-spice script.
 The checked upstream commit is `d25cb33bbd2bf37f2ad6c3cb6ce4efbfd1ec9b94`,
 retrieved on 2026-09-22. Structural validation passed.
 
+## Best-practices scanner
+
+Scanned the complete runtime source at `f994509` using Linux Mint's
+[pattern checker](https://github.com/linuxmint/github-actions/tree/6fa83e83775b6d8edd9c251f3381f5265b75307a/pattern-checker),
+commit `6fa83e83775b6d8edd9c251f3381f5265b75307a`. All 72 patterns were loaded,
+without version filtering. Result: two warnings, no blocking or informational
+findings. The local scanner returned status 1 because warnings were present.
+
+| Warning | Review |
+|---|---|
+| `tilde_in_string`, applet.js:85 | Detects the `~/` input prefix. The following line expands it with `GLib.get_home_dir()` and `GLib.build_filenamev()`. It is not passed literally to filesystem operations. |
+| `hardcoded_data_dir`, applet.js:21 | The gettext path matches Cinnamon's documented xlet translation setup and the translation install location in the tested Cinnamon 6.0.5. Changing only the lookup to `XDG_DATA_HOME` could separate it from the installed translations. |
+
+These findings remain visible for maintainer review. Neither rule was suppressed.
+The translation setup is documented in the [upstream review guidance](https://github.com/linuxmint/cinnamon-spices-applets/blob/d25cb33bbd2bf37f2ad6c3cb6ce4efbfd1ec9b94/.github/copilot-instructions.md#translation--localization).
+The scanner checks text patterns, not program behaviour or lifecycle correctness.
+
 ## Limits
 
 This is an agent-run engineering and usability inspection. It does not establish

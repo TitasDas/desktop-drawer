@@ -1,11 +1,11 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "cinnamon": "Cinnamon 6.0.5",
   "capture": "Actual Cinnamon X11 on Xvfb. Synthetic files. No image generation or compositing.",
   "source_sha256": {
     "applet.js": "c88686418df00c3bc168d5f649a0b4389ae3c32a62a8ee82d28f4fed87ac7ce3",
     "icons/desktop-vault.svg": "cf9c0ae7895bcc46b215c3d8b6800caa347c54cee3e051b1913320004644e138",
-    "metadata.json": "f46439d71883707bc037d0604222ecc6ff07ff970e33d15fc2773b8476723f44",
+    "metadata.json": "b43cfea9ca5853d6d4e0a7505556501a574bbabf0e3b2f283fd1f82371c171d9",
     "settings-schema.json": "e328f437b1b9dc95bc2f7e2b0d9bfa5d169cdc31edd96a1a10dfe2c2ee9299a2",
     "stylesheet.css": "dd17cd82657d543424476497455a923cdb1cf93071c07e4c79d12545c9922375"
   },

@@ -1,6 +1,6 @@
 # Desktop Drawer changes
 
-## Unreleased
+## 1.2.1 (2026-09-22)
 
 - Treat regular files named Private as files, not private folders.
 - Preserve short Unicode filenames without unnecessary shortening.
@@ -27,4 +27,3 @@
 - Keep Private folder contents hidden at every browsing depth.
 - Include an installation ZIP, translation template and submission checklist.
 
-Neither candidate has been submitted to Cinnamon Spices yet.

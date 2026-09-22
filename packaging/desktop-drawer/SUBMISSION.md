@@ -1,6 +1,6 @@
 # Desktop Drawer submission
 
-Candidate: 1.2.0, prepared 2026-09-22. GPL-3.0-or-later. Not submitted.
+Candidate: 1.2.1, prepared 2026-09-22. GPL-3.0-or-later. Not submitted.
 
 ## Files to submit
 
@@ -41,24 +41,8 @@ provenance and test limits are in PRODUCT-REVIEW.md, SCREENSHOTS.md and VALIDATI
 Other Cinnamon versions, Wayland, assistive technology and display scales still
 need testing. This candidate has not been independently security-reviewed.
 
-## Proposed pull request
+## Pull request scope
 
-Title: `Desktop Drawer: add configurable panel folder browser`
-
-Desktop Drawer opens a chosen folder from the Cinnamon panel. Users can browse
-subfolders and open files with their usual applications. The menu shows the current
-folder and includes a Choose folder action; native xlet settings control the folder
-and hover behaviour.
-
-Directory reads are asynchronous, subfolders load on demand, and pending reads
-are cancelled when the drawer closes. Private folder contents stay hidden at every
-browsing depth. Hidden files are omitted and directory symlinks are not expanded.
-The applet uses built-in Cinnamon libraries and makes no runtime downloads.
-
-The source and original artwork are GPL-3.0-or-later. Screenshots show synthetic
-files in real Cinnamon sessions. Validation covers Cinnamon 6.0.5 on X11, keyboard
-navigation and activation, native settings, folder states, removal and re-addition,
-regression tests, upstream structural checks and reproducible archives.
-Other Cinnamon versions and Wayland remain unverified.
-
-Update this description with any later human beta results before submitting.
+Add Desktop Drawer 1.2.1. Include only its UUID directory.
+Describe the folder browser, test environment and two reviewed scanner warnings.
+Another user's desktop test remains outstanding. It is not claimed as completed.

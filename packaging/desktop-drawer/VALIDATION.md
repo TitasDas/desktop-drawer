@@ -1,9 +1,9 @@
 # Desktop Drawer validation
 
-Date: 2026-09-22. Candidate: 1.2.0, GPL-3.0-or-later.
+Date: 2026-09-22. Candidate: 1.2.1, GPL-3.0-or-later.
 
-The native session and regression tests were rerun for the unreleased changes
-after 1.2.0. These include the regular-file `Private` fix and Unicode label tests.
+Version 1.2.1 includes the regular-file `Private` fix and Unicode label tests.
+The native session and regression tests were rerun for this candidate.
 The published 1.2.0 beta archives have not been replaced.
 
 ## Source and behaviour

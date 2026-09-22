@@ -33,6 +33,8 @@ mainloop: {}, gettext: {bindtextdomain() {}, dgettext: (d,t) => t}}});
 vm.runInContext(fs.readFileSync(path.join(__dirname, '../desktop/applet/desktop-drawer@linux-automations/applet.js'), 'utf8') + '\nglobalThis.Drawer = DesktopDrawerApplet;', context);
 const drawer = Object.create(context.Drawer.prototype);
 (async () => {
+    assert.equal(drawer._shortLabel('📁'.repeat(30)), '📁'.repeat(30), 'short Unicode names stay intact');
+    assert.equal(drawer._shortLabel('📁'.repeat(50)), '📁'.repeat(20) + '...' + '📁'.repeat(20));
     drawer.folder = '/demo/folder with trailing space ';
     assert.equal(await drawer._rootPath({}), drawer.folder);
     drawer.folder = 'relative';
@@ -58,11 +60,15 @@ const drawer = Object.create(context.Drawer.prototype);
     let displayed = [];
     drawer._generation = 1; drawer._removed = false;
     drawer._readDirectory = async () => ({entries:[{name:'pRiVaTe',path:'/demo/Private',isDirectory:true},
-        {name:'regular.txt',path:'/demo/regular.txt',isDirectory:false}],truncated:false});
-    drawer._openFolderItem = (m,p,l) => displayed.push(['folder',p]);
-    drawer._addFileItem = (m,e) => displayed.push(['file',e.name]);
+        {name:'Private',label:'Private',path:'/demo/Private-file',isDirectory:false},
+        {name:'regular.txt',label:'regular.txt',path:'/demo/regular.txt',isDirectory:false}],truncated:false});
+    drawer._addOpenItem = (m,p,l,icon) => displayed.push([p,l,icon || 'folder-open-symbolic']);
     await drawer._populate(menu,'/demo',2,1,{});
-    assert.deepEqual(displayed,[['folder','/demo/Private'],['file','regular.txt']]);
+    assert.deepEqual(displayed,[
+        ['/demo/Private','Open Private folder','folder-open-symbolic'],
+        ['/demo/Private-file','Private','text-x-generic-symbolic'],
+        ['/demo/regular.txt','regular.txt','text-x-generic-symbolic']
+    ], 'only directories named Private should use the private-folder action');
     displayed=[];
     await drawer._populate(menu,'/demo',0,0,{});
     assert.equal(displayed.length,0, 'stale reads must not populate a replaced menu');

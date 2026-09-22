@@ -9,8 +9,6 @@ Choose a folder and browse it from your Cinnamon panel with a click or a short
 hover. Subfolders open inside the menu, and files open in their usual app.
 You organise the files yourself; the drawer gives you quick access to them.
 
-![Desktop Drawer with a project folder open](../packaging/desktop-drawer/screenshots/drawer-dark.png)
-
 ## Start here
 
 1. Add Desktop Drawer to your panel using Cinnamon's Applets settings.
@@ -20,6 +18,18 @@ You organise the files yourself; the drawer gives you quick access to them.
 If you leave the folder unset, the drawer uses `Organized Desktop` inside your
 Desktop folder when it exists. Otherwise it uses your Desktop. The heading
 shows the folder you are browsing. **Open folder** opens it in your file manager.
+
+## Appearance and settings
+
+<table>
+<tr><th>Dark theme</th><th>Light theme</th></tr>
+<tr>
+<td><img src="../packaging/desktop-drawer/screenshots/drawer-dark.png" alt="Drawer in a dark theme" width="265"></td>
+<td><img src="../packaging/desktop-drawer/screenshots/drawer-light.png" alt="Drawer in a light theme" width="265"></td>
+</tr>
+</table>
+
+![Folder and hover settings](../packaging/desktop-drawer/screenshots/settings.png)
 
 ## Controls
 

@@ -2,7 +2,9 @@
 
 Date: 2026-09-22. Candidate: 1.2.0, GPL-3.0-or-later.
 
-All checks listed below passed for the 1.2.0 candidate.
+The native session and regression tests were rerun for the unreleased changes
+after 1.2.0. These include the regular-file `Private` fix and Unicode label tests.
+The published 1.2.0 beta archives have not been replaced.
 
 ## Source and behaviour
 

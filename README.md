@@ -23,36 +23,12 @@ easy to reach.
 
 ![Desktop Drawer opening from the Cinnamon panel and browsing project and reading folders](docs/media/desktop-drawer-demo.gif)
 
-Here I'm showing the drawer with sample Projects and Reading folders. Hover
-over the panel icon, browse a subfolder, and open a file in its usual app.
-Use **Choose folder** to point the drawer at your own files.
-[Watch or download the video](docs/media/desktop-drawer-demo.mp4).
+Browse your folders from the panel and open files in their usual app.
+The recording uses sample files in a real Cinnamon session.
+[Watch the video](docs/media/desktop-drawer-demo.mp4).
 
-The beta has been tested on Linux Mint with Cinnamon 6.0.5 and X11. It works
-locally, with no account or extra runtime downloads. You'll need to install
-it manually for now; it isn't on Cinnamon Spices yet.
-
-## Give the clutter a home
-
-You could start with a folder called `Organized Desktop`, move the files you
-want to tidy into it, and choose it in the drawer. Add subfolders in whatever
-way makes sense to you. You can also use a folder you already have, such as
-your Downloads, notes or current project.
-
-Once you've picked a folder, you can:
-
-- Reach your project files, notes or reading material from the panel.
-- Browse with hover, click or the keyboard.
-- See which folder is open and change it directly from the menu.
-- Keep filenames inside folders named Private out of the drawer.
-
-<table>
-<tr><th>Dark theme</th><th>Light theme</th></tr>
-<tr>
-<td><img src="packaging/desktop-drawer/screenshots/drawer-dark.png" alt="Desktop Drawer in a dark Cinnamon theme, browsing a project folder" width="265"></td>
-<td><img src="packaging/desktop-drawer/screenshots/drawer-light.png" alt="The same Desktop Drawer menu in a light Cinnamon theme" width="265"></td>
-</tr>
-</table>
+Tested on Cinnamon 6.0.5 with X11. The beta needs manual installation;
+it isn't on Cinnamon Spices yet.
 
 ## Install
 
@@ -73,79 +49,40 @@ back after extraction. This keeps the upgrade from mixing old and new files.
 If you leave the folder unset, the drawer uses `Organized Desktop` inside your
 Desktop folder when present, otherwise your Desktop folder.
 
-## Set it up your way
+## Using the drawer
 
-![Native Cinnamon settings for choosing a folder and adjusting hover behaviour](packaging/desktop-drawer/screenshots/settings.png)
+Click the panel icon or hover over it to browse your chosen folder. Select a
+file to open it, or use **Open folder** to open the folder in your file manager.
+**Choose folder** opens settings, where you can also turn hover off or adjust
+the delay.
 
-Turn **Open menus on hover** off if you prefer clicking. Adjust how long the
-pointer must rest over the panel icon before the drawer opens.
+Use the arrow keys to browse, **Enter** to open an item and **Escape** to close
+the menu.
 
-| Control | What it does |
-|---|---|
-| Click the panel icon | Open or close the drawer |
-| Hover over the icon | Open after the configured delay, when enabled |
-| Right and Left arrows | Open and close subfolders in left-to-right layouts |
-| Enter | Open the selected file or folder |
-| Escape | Close the drawer |
-| Open folder | See the whole folder in your file manager |
+You organise the files yourself. Desktop Drawer does not move, rename or delete
+them. It works locally and collects no usage data. Folders named `Private`
+can be opened in your file manager, but their contents stay out of the drawer.
+This does not lock or encrypt them.
 
-## Private folders and your files
-
-Folders named `Private`, ignoring capitalisation, are shown as **Open Private
-folder**. Their contents stay out of the drawer, including inside subfolders.
-They still open in your file manager. This is a display convenience, not a lock
-or encryption.
-
-Desktop Drawer does not move, rename, edit or delete your files. It does not
-collect usage data. Cinnamon stores your chosen folder and preferences locally.
-A network-mounted folder can use that filesystem's network connection.
-
-The drawer shows up to 30 visible entries per folder and three folder levels.
-Hidden files are omitted and directory symlinks are not expanded. For larger
-folders, **Open folder** gives you the complete listing.
-
-## When something goes wrong
-
-If a folder was moved or a drive disconnected, **Choose folder** remains available.
-If a file cannot open, the applet points you to its default application.
-
-<table>
-<tr><th>Folder unavailable</th><th>File could not open</th></tr>
-<tr>
-<td><img src="packaging/desktop-drawer/screenshots/folder-unavailable.png" alt="An unavailable folder with a Choose folder recovery action" width="238"></td>
-<td><img src="packaging/desktop-drawer/screenshots/opening-error.png" alt="A notification explaining that the item could not open and suggesting checking its default application" width="420"></td>
-</tr>
-</table>
-
-See the [user guide](docs/USER-GUIDE.md) for empty folders, limits and removal.
-To uninstall, remove the applet from your panel, then delete its directory from
-`~/.local/share/cinnamon/applets/`. Your browsed files stay untouched.
+See the [user guide](docs/USER-GUIDE.md) for screenshots, browsing limits,
+troubleshooting and removal.
 
 ## Tell me how it works for you
 
-I built this to solve a problem I have. I'd like to hear whether it helps with
-yours too, and where it gets in the way.
+If the drawer helps you keep things tidy, or something gets in the way,
+[tell me about it](https://github.com/TitasDas/desktop-drawer/issues/new/choose).
+Please include your Cinnamon version and Linux distribution when reporting a
+problem. Keep personal filenames out of screenshots.
 
-Try the [short beta checklist](packaging/desktop-drawer/BETA-CHECKLIST.md) and
-[report what happened](https://github.com/TitasDas/desktop-drawer/issues/new/choose).
-Please include your Cinnamon version and Linux distribution so I can understand
-your setup. Use demo filenames in screenshots.
+You can also try the [beta checklist](packaging/desktop-drawer/BETA-CHECKLIST.md)
+or [contribute a fix or translation](CONTRIBUTING.md).
 
-Automated checks cover menu interactions, keyboard activation, settings, folder
-states and package rebuilds. Other Cinnamon versions, Wayland, assistive technology
-and different display scales still need testing. See the
-[validation record](packaging/desktop-drawer/VALIDATION.md) for the scope and limits.
+## Development
 
-## Want to help improve it?
-
-Bug reports, translations and small fixes are welcome. You can also help by
-trying it on your desktop and telling me what worked.
-
-The applet is plain JavaScript using Cinnamon's built-in libraries.
-[Build instructions](packaging/desktop-drawer/BUILD.md),
-[contribution guide](CONTRIBUTING.md), and
-[release notes](packaging/desktop-drawer/CHANGELOG.md) are included.
-The repository contains only Desktop Drawer, not the larger automation suite.
+The applet uses JavaScript and Cinnamon's built-in libraries.
+See [build instructions](packaging/desktop-drawer/BUILD.md),
+[test coverage and limits](packaging/desktop-drawer/VALIDATION.md), and
+[changes](packaging/desktop-drawer/CHANGELOG.md).
 
 ## Licence
 

@@ -69,5 +69,13 @@ This is an agent-run engineering and usability inspection. It does not establish
 screen-reader support, accessibility compliance, Wayland support, compatibility
 with other Cinnamon versions, or behaviour in every desktop application. File
 and folder opening used a controlled desktop handler rather than a user's editor.
-A second human should run BETA-CHECKLIST.md before submission. Cinnamon Spices submission is still pending. Public beta releases are available
+A second human should run BETA-CHECKLIST.md before submission. Cinnamon Spices [PR #9060](https://github.com/linuxmint/cinnamon-spices-applets/pull/9060) is awaiting review. Public beta releases are available
 from https://github.com/TitasDas/desktop-drawer/releases.
+
+## Submission checks
+
+Version 1.2.1 was submitted in PR #9060 at commit `6ef5dd5`.
+Every committed submission file matched the verified package.
+The upstream pattern job passed with the same two advisory warnings.
+The upstream structural job is skipped in the pull-request-target workflow;
+local `validate-spice` passed. Maintainer review is pending.

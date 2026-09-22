@@ -28,7 +28,7 @@ The recording uses sample files in a real Cinnamon session.
 [Watch the video](docs/media/desktop-drawer-demo.mp4).
 
 Tested on Cinnamon 6.0.5 with X11. The beta needs manual installation;
-it isn't on Cinnamon Spices yet.
+[Cinnamon Spices submission](https://github.com/linuxmint/cinnamon-spices-applets/pull/9060) is under review.
 
 ## Install
 

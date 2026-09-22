@@ -26,4 +26,3 @@
 - Load directories asynchronously and submenus on demand.
 - Keep Private folder contents hidden at every browsing depth.
 - Include an installation ZIP, translation template and submission checklist.
-

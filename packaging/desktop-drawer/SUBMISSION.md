@@ -1,6 +1,6 @@
 # Desktop Drawer submission
 
-Candidate: 1.2.1, prepared 2026-09-22. GPL-3.0-or-later. Not submitted.
+Candidate: 1.2.1, prepared 2026-09-22. GPL-3.0-or-later. Submitted: [PR #9060](https://github.com/linuxmint/cinnamon-spices-applets/pull/9060). Awaiting maintainer review.
 
 ## Files to submit
 
@@ -35,7 +35,8 @@ provenance and test limits are in PRODUCT-REVIEW.md, SCREENSHOTS.md and VALIDATI
 - [x] Verify the installation and source archives, byte-identical rebuild, and upstream submission directory.
 - [ ] Ask another Mint user to follow BETA-CHECKLIST.md with their normal applications.
 - [x] Inspect the applet changes and every screenshot in the final set.
-- [ ] Open the one-applet pull request and respond to maintainer feedback.
+- [x] Open the one-applet pull request.
+- [ ] Respond to maintainer feedback.
 - [ ] Record the published Cinnamon Spices URL after acceptance.
 
 Other Cinnamon versions, Wayland, assistive technology and display scales still

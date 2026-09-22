@@ -1,0 +1,70 @@
+{
+  "version": "1.2.0",
+  "cinnamon": "Cinnamon 6.0.5",
+  "capture": "Actual Cinnamon X11 on Xvfb. Synthetic files. No image generation or compositing.",
+  "source_sha256": {
+    "applet.js": "bea5d6897051bda299c4d66da8f955265df23d354eb5f8f0492973d489e02b51",
+    "icons/desktop-vault.svg": "cf9c0ae7895bcc46b215c3d8b6800caa347c54cee3e051b1913320004644e138",
+    "metadata.json": "f46439d71883707bc037d0604222ecc6ff07ff970e33d15fc2773b8476723f44",
+    "settings-schema.json": "e328f437b1b9dc95bc2f7e2b0d9bfa5d169cdc31edd96a1a10dfe2c2ee9299a2",
+    "stylesheet.css": "dd17cd82657d543424476497455a923cdb1cf93071c07e4c79d12545c9922375"
+  },
+  "screenshots": {
+    "drawer-dark": {
+      "file": "drawer-dark.png",
+      "pixels": [
+        265,
+        363
+      ],
+      "sha256": "9bc17a3b9366154678ea493a343af9eaad8016746c00e0cef1cd8734f4f09afd"
+    },
+    "folder-unavailable": {
+      "file": "folder-unavailable.png",
+      "pixels": [
+        238,
+        206
+      ],
+      "sha256": "3464642dcda0a0d5051d34fd9dc03a6dcd9cb1b6fce8f75439090aac7450ebbd"
+    },
+    "folder-empty": {
+      "file": "folder-empty.png",
+      "pixels": [
+        210,
+        206
+      ],
+      "sha256": "88c04987565169b5c7618e7098f1f7ae762c4b9fece67baf570f23013223546d"
+    },
+    "private-folder": {
+      "file": "private-folder.png",
+      "pixels": [
+        304,
+        206
+      ],
+      "sha256": "132b02e5c13bc2df367e6d07eafdfcb09d3eaf3492587beb4518c0d38268040a"
+    },
+    "opening-error": {
+      "file": "opening-error.png",
+      "pixels": [
+        503,
+        103
+      ],
+      "sha256": "019cccb0ef220d6b104f7e16f96d12bbf97b120d82cb8780cb88f696a640b62a"
+    },
+    "drawer-light": {
+      "file": "drawer-light.png",
+      "pixels": [
+        265,
+        363
+      ],
+      "sha256": "58e605c56fccb38daa41bb8534d4f72c0777dc3f467b104d7d515396b6cf1e59"
+    },
+    "settings": {
+      "file": "settings.png",
+      "pixels": [
+        824,
+        484
+      ],
+      "sha256": "f86a26d199ea45a1ef53efca0291716334091f820d2536bd0fac421a482ca6bb"
+    }
+  }
+}

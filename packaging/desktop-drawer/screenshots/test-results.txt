@@ -1,0 +1,8 @@
+PASS: native folder heading, actions, plain copy and nested Private hiding
+PASS: missing, empty and Private root states retain Choose folder
+PASS: selected folder paths preserve trailing spaces
+PASS: hover off for root and submenus, click, keyboard Right, Left and Escape and hover on
+PASS: keyboard Enter launches a file and a folder through Gio (isolated test handler)
+PASS: a real failed launch displays recovery guidance without a filename
+PASS: remove and re-add retain the selected folder and clean up menus
+PASS: Choose folder opens the real Cinnamon settings window

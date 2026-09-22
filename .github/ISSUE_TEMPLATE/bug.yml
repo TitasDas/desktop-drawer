@@ -1,0 +1,30 @@
+name: Report a problem
+description: Tell us what went wrong while using Desktop Drawer.
+title: "Desktop Drawer: "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Your desktop
+      description: Linux distribution, Cinnamon version, X11 or Wayland, and display scale.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Desktop Drawer version
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or extra context
+      description: Please use demo filenames and remove personal information.

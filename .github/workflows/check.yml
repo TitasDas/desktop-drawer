@@ -1,0 +1,20 @@
+name: Check Desktop Drawer
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Check source and behaviour
+        run: |
+          node --check desktop/applet/desktop-drawer@linux-automations/applet.js
+          python3 tests/desktop-drawer-test.py
+      - name: Build and reproduce the packages
+        run: |
+          python3 packaging/desktop-drawer/build.py /tmp/drawer-release
+          python3 packaging/desktop-drawer/verify.py /tmp/drawer-release

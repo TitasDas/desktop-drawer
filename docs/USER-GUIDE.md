@@ -1,8 +1,9 @@
 # Desktop Drawer
 
-I download a lot of files, and my desktop ends up cluttered. I built Desktop
-Drawer to help me keep things organised while keeping my files and folders
-easy to reach.
+I like an organised desktop where I can enjoy my wallpaper. When it's covered
+in files, it feels like a messy desk and makes it harder for me to focus.
+I built Desktop Drawer so I could tidy those files away and still reach them
+easily from the panel.
 
 Choose a folder and browse it from your Cinnamon panel with a click or a short
 hover. Subfolders open inside the menu, and files open in their usual app.

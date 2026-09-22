@@ -1,17 +1,19 @@
 # Desktop Drawer
 
-Keep your desktop tidy and your files within reach.
+Enjoy your wallpaper. Keep your files within reach.
 
-I download a lot of files, and my desktop ends up cluttered. I built Desktop
-Drawer because I wanted to keep things organised without losing easy access
-to my files and folders.
+I like things organised, and I like being able to see a good wallpaper. A
+desktop covered in files feels like a cluttered room or a messy desk to me.
+It makes it harder to settle down and focus.
 
-It's a small applet for the Cinnamon desktop. Put your files in a folder,
-choose that folder in the drawer, and browse it from your panel whenever you
-need something. You organise the files yourself; the drawer keeps them easy
-to get to.
+But I also download a lot of files, so my desktop keeps filling up. I wanted
+to tidy them away without making them harder to find. That's why I built
+Desktop Drawer.
 
-If your desktop fills up like mine, give it a try.
+It's a small applet for Cinnamon that lets you browse a folder from your
+panel. You put your files in order, and the drawer keeps them close by.
+Your desktop has room for your wallpaper again, and your files are still
+easy to reach.
 
 [Download the 1.2.0 beta](https://github.com/TitasDas/desktop-drawer/releases/download/v1.2.0/desktop-drawer-1.2.0.zip)
 

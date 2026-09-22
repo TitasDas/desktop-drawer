@@ -1,7 +1,11 @@
 # Contributing
 
-Bug reports, testing on other Cinnamon versions, translations and small fixes are welcome.
-Start with an issue that describes the user problem and your environment.
+Thanks for helping improve Desktop Drawer. I built it to make my own desktop
+easier to manage, and I'd like it to work well for you too.
+
+You can help by reporting a bug, trying it on another Cinnamon version,
+translating it or contributing a fix. Start with an issue describing what you
+were trying to do, what got in the way and your desktop setup.
 
 ## Run checks
 

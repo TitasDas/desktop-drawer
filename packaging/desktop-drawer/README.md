@@ -1,8 +1,12 @@
 # Desktop Drawer
 
-Open everyday files from your Cinnamon panel. Choose a folder, then browse it
-with a click or a short hover. Subfolders open inside the menu, and files open
-with their usual desktop application.
+I download a lot of files, and my desktop ends up cluttered. I built Desktop
+Drawer to help me keep things organised while keeping my files and folders
+easy to reach.
+
+Choose a folder and browse it from your Cinnamon panel with a click or a short
+hover. Subfolders open inside the menu, and files open in their usual app.
+You organise the files yourself; the drawer gives you quick access to them.
 
 ![Desktop Drawer with a project folder open](screenshot.png)
 
@@ -62,7 +66,7 @@ or extra runtime downloads. It does not move, rename, edit or delete files.
 Cinnamon stores the selected folder and settings in your user profile. Browsing
 a network-mounted folder can involve that filesystem's network connection.
 
-The candidate has been tested on Cinnamon 6.0.5 with X11. Other Cinnamon versions,
+This beta has been tested on Cinnamon 6.0.5 with X11. Other Cinnamon versions,
 Wayland, assistive technology and different display scales still need user testing.
 
 ## Remove it
@@ -71,10 +75,11 @@ Right-click the panel icon and select **Remove**. Your files stay where they are
 For a manual installation, remove its `desktop-drawer@linux-automations` directory
 from `~/.local/share/cinnamon/applets/` after removing it from the panel.
 
-## Report a problem
+## Tell me about a problem
 
-Include your Cinnamon version, Linux distribution, steps to reproduce, and what
-you expected. Use demo filenames in screenshots. The source package includes
+If something isn't working, [tell me what happened](https://github.com/TitasDas/desktop-drawer/issues/new/choose).
+Please include your Cinnamon version, Linux distribution, what you did and what
+you expected to happen. Use demo filenames in screenshots. The source package includes
 `BETA-CHECKLIST.md` for a short test session.
 
 ## Licence

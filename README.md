@@ -1,28 +1,45 @@
 # Desktop Drawer
 
-**Keep your everyday files one click away in the Cinnamon panel.**
+Keep your desktop tidy and your files within reach.
 
-Choose a folder, browse its subfolders, and open files in the applications you
-already use. Desktop Drawer works locally, with no account or extra runtime downloads.
+I download a lot of files, and my desktop ends up cluttered. I built Desktop
+Drawer because I wanted to keep things organised without losing easy access
+to my files and folders.
+
+It's a small applet for the Cinnamon desktop. Put your files in a folder,
+choose that folder in the drawer, and browse it from your panel whenever you
+need something. You organise the files yourself; the drawer keeps them easy
+to get to.
+
+If your desktop fills up like mine, give it a try.
 
 [Download the 1.2.0 beta](https://github.com/TitasDas/desktop-drawer/releases/download/v1.2.0/desktop-drawer-1.2.0.zip)
 
-[Installation](#install) | [Report a problem](https://github.com/TitasDas/desktop-drawer/issues/new/choose)
+[Installation](#install) | [Tell me how it goes](https://github.com/TitasDas/desktop-drawer/issues/new/choose)
 
-This is a beta release. Tested on Linux Mint with Cinnamon 6.0.5 and X11.
-It is not yet available through Cinnamon Spices.
+## See how it works
 
-## See it in action
+![Desktop Drawer opening from the Cinnamon panel and browsing project and reading folders](docs/media/desktop-drawer-demo.gif)
 
-![Actual recording of opening Desktop Drawer and browsing project and reading folders](docs/media/desktop-drawer-demo.gif)
+Here I'm showing the drawer with sample Projects and Reading folders. Hover
+over the panel icon, browse a subfolder, and open a file in its usual app.
+Use **Choose folder** to point the drawer at your own files.
+[Watch or download the video](docs/media/desktop-drawer-demo.mp4).
 
-Hover over the panel icon, open Projects or Reading, and use **Choose folder**
-to make the drawer your own. The recording uses real Cinnamon and demo files.
-[Watch or download the MP4](docs/media/desktop-drawer-demo.mp4).
+The beta has been tested on Linux Mint with Cinnamon 6.0.5 and X11. It works
+locally, with no account or extra runtime downloads. You'll need to install
+it manually for now; it isn't on Cinnamon Spices yet.
 
-## Make a folder easy to reach
+## Give the clutter a home
 
-- Keep project files, notes or reading material near your work.
+You could start with a folder called `Organized Desktop`, move the files you
+want to tidy into it, and choose it in the drawer. Add subfolders in whatever
+way makes sense to you. You can also use a folder you already have, such as
+your Downloads, notes or current project.
+
+Once you've picked a folder, you can:
+
+- Reach your project files, notes or reading material from the panel.
 - Browse with hover, click or the keyboard.
 - See which folder is open and change it directly from the menu.
 - Keep filenames inside folders named Private out of the drawer.
@@ -102,18 +119,25 @@ See the [user guide](docs/USER-GUIDE.md) for empty folders, limits and removal.
 To uninstall, remove the applet from your panel, then delete its directory from
 `~/.local/share/cinnamon/applets/`. Your browsed files stay untouched.
 
-## Help test the beta
+## Tell me how it works for you
+
+I built this to solve a problem I have. I'd like to hear whether it helps with
+yours too, and where it gets in the way.
 
 Try the [short beta checklist](packaging/desktop-drawer/BETA-CHECKLIST.md) and
 [report what happened](https://github.com/TitasDas/desktop-drawer/issues/new/choose).
-Include your Cinnamon version and Linux distribution. Use demo filenames in screenshots.
+Please include your Cinnamon version and Linux distribution so I can understand
+your setup. Use demo filenames in screenshots.
 
 Automated checks cover menu interactions, keyboard activation, settings, folder
 states and package rebuilds. Other Cinnamon versions, Wayland, assistive technology
 and different display scales still need testing. See the
 [validation record](packaging/desktop-drawer/VALIDATION.md) for the scope and limits.
 
-## For contributors
+## Want to help improve it?
+
+Bug reports, translations and small fixes are welcome. You can also help by
+trying it on your desktop and telling me what worked.
 
 The applet is plain JavaScript using Cinnamon's built-in libraries.
 [Build instructions](packaging/desktop-drawer/BUILD.md),

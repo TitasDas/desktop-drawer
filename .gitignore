@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 /packaging/desktop-drawer/screenshots/session.log
+packaging/desktop-drawer/walkthrough/rec/
+packaging/desktop-drawer/walkthrough/frames/
+packaging/desktop-drawer/walkthrough/*.mp3
+packaging/desktop-drawer/walkthrough/*.wav
+packaging/desktop-drawer/walkthrough/*.mp4
+packaging/desktop-drawer/walkthrough/*.gif
+packaging/desktop-drawer/walkthrough/*.jpg
+packaging/desktop-drawer/walkthrough/*.txt
+packaging/desktop-drawer/walkthrough/*.vtt
+packaging/desktop-drawer/walkthrough/*.json
+packaging/desktop-drawer/walkthrough/wallpaper.png

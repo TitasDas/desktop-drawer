@@ -21,11 +21,11 @@ easy to reach.
 
 ## See how it works
 
-![Desktop Drawer opening from the Cinnamon panel and browsing project and reading folders](docs/media/desktop-drawer-demo.gif)
+[![A cluttered desktop tidies itself into the panel, then Desktop Drawer opens and browses its folders](docs/media/walkthrough-teaser.gif)](https://implantintelligence.com/p/desktop-drawer#usage-demo)
 
-Browse your folders from the panel and open files in their usual app.
-The recording uses sample files in a real Cinnamon session.
-[Watch the video](docs/media/desktop-drawer-demo.mp4).
+[Watch the 33-second walkthrough](https://implantintelligence.com/p/desktop-drawer#usage-demo) with sound and captions.
+It was recorded in a real Cinnamon session with sample files; the opening clutter is drawn, everything after it is the applet.
+The short [menu-only recording](docs/media/desktop-drawer-demo.gif) is still here too.
 
 Tested on Cinnamon 6.0.5 with X11. The beta needs manual installation;
 [Cinnamon Spices submission](https://github.com/linuxmint/cinnamon-spices-applets/pull/9060) is under review.

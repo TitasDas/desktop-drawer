@@ -21,9 +21,9 @@ easy to reach.
 
 ## See how it works
 
-[![A cluttered desktop tidies itself into the panel, then Desktop Drawer opens and browses its folders](docs/media/walkthrough-teaser.gif)](https://implantintelligence.com/p/desktop-drawer#usage-demo)
+[![Desktop Drawer: tidy a cluttered desktop into the Cinnamon panel and enjoy your wallpaper](docs/media/walkthrough-teaser.gif)](https://implantintelligence.com/p/desktop-drawer#usage-demo)
 
-[Watch the 33-second walkthrough](https://implantintelligence.com/p/desktop-drawer#usage-demo) with sound and captions.
+[Watch the 34-second walkthrough](https://implantintelligence.com/p/desktop-drawer#usage-demo) with sound and captions.
 It was recorded in a real Cinnamon session with sample files; the opening clutter is drawn, everything after it is the applet.
 The short [menu-only recording](docs/media/desktop-drawer-demo.gif) is still here too.
 

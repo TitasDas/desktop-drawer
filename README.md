@@ -23,7 +23,7 @@ easy to reach.
 
 [![Desktop Drawer: tidy a cluttered desktop into the Cinnamon panel and enjoy your wallpaper](docs/media/walkthrough-teaser.gif)](https://implantintelligence.com/p/desktop-drawer#usage-demo)
 
-[Watch the narrated walkthrough](https://implantintelligence.com/p/desktop-drawer#usage-demo) (1 min 9 sec) with captions.
+[Watch the narrated walkthrough](https://implantintelligence.com/p/desktop-drawer#usage-demo) (1 min 6 sec) with captions.
 It was recorded in a real Cinnamon session with sample files; the opening clutter is drawn, everything after it is the applet.
 The short [menu-only recording](docs/media/desktop-drawer-demo.gif) is still here too.
 

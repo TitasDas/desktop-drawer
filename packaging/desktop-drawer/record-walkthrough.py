@@ -149,14 +149,23 @@ def record(pid, output):
         move(icon[0], icon[1], dur=0.9); mark('hover-icon')
         wait_for('global.drawer.menu.isOpen', bool); time.sleep(1.4); mark('menu-open')
         hover_item('Projects', 1.8); mark('projects')
-        evaluate("global.drawer.menu._getMenuItems().find(i=>i.label && i.label.text==='Projects').menu.close(); true"); time.sleep(.3)
+        # Collapse Projects with the pointer on its own header, so the shrinking
+        # menu never leaves the pointer outside it (the drawer closes on leave).
+        hover_item('Projects', 0.3)
+        evaluate("global.drawer.menu._getMenuItems().find(i=>i.label && i.label.text==='Projects').menu.close(); true"); time.sleep(.5)
         hover_item('Reading', 1.8); mark('reading')
-        evaluate("global.drawer.menu._getMenuItems().find(i=>i.label && i.label.text==='Reading').menu.close(); true"); time.sleep(.4)
+        hover_item('Reading', 0.3)
+        evaluate("global.drawer.menu._getMenuItems().find(i=>i.label && i.label.text==='Reading').menu.close(); true"); time.sleep(.5)
+        if not evaluate('global.drawer.menu.isOpen'):
+            evaluate('global.drawer._openDrawer(); true'); wait_for('global.drawer.menu.isOpen', bool)
+        # keyboard navigation needs the menu focused; the smoke test opens it the same way
+        evaluate('global.drawer.menu.close(); true'); time.sleep(.3)
+        evaluate('global.drawer._openDrawer(); true'); wait_for('global.drawer.menu.isOpen', bool); time.sleep(.4)
         mark('keys')
-        for _ in range(3):
-            key('Down'); time.sleep(.55)
-        key('Up'); time.sleep(.6)
-        key('Escape'); time.sleep(.3); mark('escape')
+        for _ in range(4):
+            key('Down'); time.sleep(.6)
+        key('Up'); time.sleep(.7)
+        key('Escape'); time.sleep(.4); mark('escape')
         move(700, 380, dur=0.6); time.sleep(.9)
         move(icon[0], icon[1], dur=0.7); click(); mark('click-open')
         wait_for('global.drawer.menu.isOpen', bool); time.sleep(1.0)

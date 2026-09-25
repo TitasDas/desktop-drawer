@@ -14,3 +14,7 @@ Requirements: Cinnamon, Xvfb, dbus-run-session, ffmpeg, python3-xlib, Pillow. Th
 The disposable session has no session manager, so `csd-background` cannot paint the wallpaper; the desktop records as exact black and the editor keys that to the same wallpaper image. Music is "Wallpaper" by Kevin MacLeod (CC BY 4.0), from incompetech.com (`mp3-royaltyfree/Wallpaper.mp3`). Fonts: Bricolage Grotesque and Work Sans, both OFL; set `WALKTHROUGH_FONTS` to their directory.
 
 The backdrop is "Romania" by Daniel Mirlea (https://danielmirlea.com), shipped with Linux Mint 21.3 under the Unsplash License. Captions use the shared style in `captions.py`: a soft transparent scrim with large type, kept to the right of the drawer menu.
+
+## Narration
+
+`narration.json` holds the spoken script, one line per scene. `narrate.py` voices it with Kokoro-82M (Apache 2.0, runs on CPU: `pip install torch --index-url https://download.pytorch.org/whl/cpu kokoro soundfile`), and `mix.py` stretches nothing itself: render with `NARRATION_LENS=<key>-lens.json` so each scene holds long enough for its line, then run `mix.py <key>` to lay the voice in, duck the music under it with a sidechain compressor, and write captions and a transcript that follow the narration. Paths in `mix.py` point at the working folder used to build the published video; adjust them to yours. The video pages label the narration as a synthetic voice.

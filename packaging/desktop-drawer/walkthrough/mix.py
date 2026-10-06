@@ -33,7 +33,7 @@ elif key == 'dd':
     music, skip, frames = f'{wd}/wallpaper.mp3', 6, f'{wd}/frames'
     whoosh_at = T['cue_starts']
 else:  # readstand: the existing video, its own music, narration at each chapter
-    src = '~/work/software-shop-wd-unlocker/public/media/readstand/0.2.2/usage-demo.mp4'
+    src = os.environ.get('READSTAND_VIDEO', os.path.expanduser('~/work/software-shop-wd-unlocker/public/media/readstand/0.2.2/usage-demo.mp4'))
     chapters = [0.0, 3.08, 15.2, 51.32, 72.48, 88.96, 105.28, 112.12, 126.0, 141.76, 154.2, 174.08, 187.64, 213.08]
     duration = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', src]).decode())
     offsets = [0.2, 5.9] + [c + 1.75 for c in chapters[2:13]] + [chapters[13] + 0.6]
